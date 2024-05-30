@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+    <title>QUIZ</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	 <link href="css/navbar.css" rel="stylesheet">
+	<link href="css/tambah.css" rel="stylesheet">
+		<style type="text/css">
+		body {
+			padding-top: 40px;
+			margin-bottom: 0px;
+			background-color: #ffffff;
+			background: url('img/strip3.png') repeat;
+		}
+		subjudul{
+			text-align: center;
+			font-size: 24px;
+			color: #999999;
+			font-family: inherit;
+
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-popover.js"></script>
+	<script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/quiz_functions1.js"></script>
+	<script src="js/quiz_config.js"></script>
+	<script src="js/bootbox.js"></script>
+	<script src="js/bootbox.min.js"></script>
+  </head>
+
+  <body>
+	<!-- Navigasi -->
+     <div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="./index.html">HCI Quiz</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Isi -->
+
+	<div id="red" style="display: block;">
+	<div class="jumbotron masthead">
+	<div class="container">
+			<div class="row-fluid" align="right">
+				<!-- form nama -->	
+				<h1>Kuis Interaksi Manusia Komputer</h1>
+				<h3>Test Your Human Computer Interaction Knowledge!</h3>		
+				<div class="span2 offset9">
+					<br>
+					<button class="btn1 btn-large btn-block btn-primary" type="submit" onclick="showStuff('blue'); hideStuff('red'); return false;"> Mulai </button>
+				</div>				
+			</div>
+	</div>
+	</div>
+	</div>
+		<div id="blue" style="display: none;">
+			<div class="row">
+				<div class="span7 offset3">
+					<div class="well">
+						<script type="text/javascript">
+							renderQuiz();
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+  </body>
+</html>
